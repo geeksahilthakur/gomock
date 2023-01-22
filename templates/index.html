@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+
+	</head>
+
+	<body>
+    <nav class="navbar bg-body-tertiary">
+    <a class="navbar-brand" href="#">
+        <br>
+     <center><img src="https://firebasestorage.googleapis.com/v0/b/kissan-ai.appspot.com/o/mock.png?alt=media&token=43c87e21-9727-4ec1-a449-edd27f06b794" alt="Logo" width="110" height="50" ></center>
+    </a>
+     </div>
+    </nav>
+    <center><h3 style="color: green;" class="let_space">{{qsn}}</h3></center>
+        <form class="grid" action="/result" method="POST">
+
+          {% if name %}
+            <center>
+                <br>
+<!--              <h3 style="color: green;" class="let_space">{{qs}}</h3>-->
+              <h3 style="color: blue;" class="let_space"> <a style="color:green">User Said : </a>{{name}}</h3>
+              <h3 style="color: red ;" class="let_space">Percentage : {{pc}} %</h3>
+
+            </center>
+
+          {% endif %}
+
+
+         <center> <label >Your Answer:<br><br></label>
+          <input type="text" id="name" name="name" style="width: 950px;" ></center>
+            <button class="file_submit" type="Submit">Submit</button>
+            <center>@geeksahil</center>
+
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </body>
+
+</html>
